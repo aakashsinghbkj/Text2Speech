@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/realbg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/hey"
+        android:layout_width="166dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="400dp"
+        android:background="#6D15C71E"
+        android:fontFamily="@font/noticia_text_italic"
+        android:paddingLeft="28dp"
+        android:text="Hey There!"
+        android:textColor="#27F3E0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/write"
+        android:layout_width="234dp"
+        android:layout_height="44dp"
+        android:background="#F70D2FEA"
+        android:ems="10"
+        android:hint="Write Something here"
+        android:inputType="textPersonName"
+        android:paddingLeft="22dp"
+        android:paddingTop="0dp"
+        android:paddingRight="0dp"
+        android:textColor="#F6F8F8"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hey"
+        app:layout_constraintVertical_bias="0.204" />
+
+    <ImageButton
+        android:id="@+id/button"
+        android:layout_width="157dp"
+        android:layout_height="131dp"
+        android:layout_marginBottom="140dp"
+        android:background="@drawable/speech"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="180dp"
+        android:layout_height="43dp"
+        android:fontFamily="sans-serif"
+        android:text="Tap Below"
+        android:textColor="#FD0D0D"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/write"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
